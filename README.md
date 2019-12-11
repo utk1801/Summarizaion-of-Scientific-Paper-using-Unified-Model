@@ -24,10 +24,11 @@ Codes for generating the dataset is in `data` folder.
 
 
 ## Scientific Paper dataset:
-Datasets for data-driven summarization of scientific articles: generating the title of a paper from its abstract (title-gen) or abstract from its full body (body-gen). title-gen was constructed from the MEDLINE dataset, whereas body-gen from the PubMed Open Access Subset. 
-[Here's the data repo] (https://drive.google.com/drive/folders/17sPutnazCN2MI-7v88KTQ1lndX1-UBGv)
 
-##Steps to execute:
+Datasets for data-driven summarization of scientific articles: generating the title of a paper from its abstract (title-gen) or abstract from its full body (body-gen). title-gen was constructed from the MEDLINE dataset, whereas body-gen from the PubMed Open Access Subset. 
+[Here's the data repo](https://drive.google.com/drive/folders/17sPutnazCN2MI-7v88KTQ1lndX1-UBGv)
+
+## Steps to execute:
 
 To generate merged data file containing abstract and title per scientific paper 
 ```
