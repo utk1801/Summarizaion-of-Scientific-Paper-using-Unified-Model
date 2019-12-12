@@ -16,7 +16,12 @@ This repo is maintained as part of Final Project for CSE538: NLP Course ,underta
 
 **Note**: To use ROUGE evaluation, you need to download the `ROUGE-1.5.5` package from [here](https://github.com/andersjo/pyrouge). Next, follow the instrunction from [here](https://pypi.org/project/pyrouge/) to install pyrouge and set the ROUGE path to your absolute path of `ROUGE-1.5.5` directory.
 
-**Error Handling**: If you encounter the error message `Cannot open exception db file for reading: /path/to/ROUGE-1.5.5/data/WordNet-2.0.exc.db` when using pyrouge, the problem can be solved from [here](https://github.com/tagucci/pythonrouge#error-handling).
+## Files we created and modified for our implementation:
+1. project_scientific_merge_abstract_and_title.py - This code parses 2 files: 1 file for abstracts of all scientific papers, and another file for titles of all corresponding scientific papers, to produce 1 file per scientific paper, where each file has an abstract and a title as 'highlight' of the paper .
+
+2. custom_make_data.py - This file feeds raw data-set generated using above code file and generates tokenized binary format files, i.e (train.bin, test.bin , val.bin).
+
+More details on implementation can be found in Section 5 of the Report PDF.
 
 ## CNN/Daily Mail dataset
 
@@ -28,7 +33,7 @@ Codes for generating the dataset is in `data` folder.
 Datasets for data-driven summarization of scientific articles: generating the title of a paper from its abstract (title-gen) or abstract from its full body (body-gen). title-gen was constructed from the MEDLINE dataset, whereas body-gen from the PubMed Open Access Subset. 
 [Here's the data repo](https://drive.google.com/drive/folders/17sPutnazCN2MI-7v88KTQ1lndX1-UBGv)
 
-## Steps to execute:
+## Steps to execute for pre-processing Scientific papers:
 
 To generate merged data file containing abstract and title per scientific paper 
 ```
